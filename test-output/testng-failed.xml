@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="firstname" value="Ahmed"/>
+  <parameter name="password" value="mazagat_008"/>
+  <parameter name="email" value="mohamed_sabry007@yahoo.com"/>
+  <parameter name="lastname" value="mahran"/>
+  <test name="First Register">
+    <parameter name="firstname" value="mohamed"/>
+    <parameter name="password" value="mazagat_007"/>
+    <parameter name="email" value="mohamed_sabry007@yahoo.com"/>
+    <parameter name="lastname" value="mahran"/>
+    <classes>
+      <class name="com.Tests.RegisterTests"/>
+    </classes>
+  </test> <!-- First Register -->
+  <test name="Second Register">
+    <parameter name="firstname" value="Ahmed"/>
+    <parameter name="password" value="mazagat_008"/>
+    <parameter name="email" value="mohamed_sabry007@yahoo.com"/>
+    <parameter name="lastname" value="mahran"/>
+    <classes>
+      <class name="com.Tests.RegisterTests"/>
+    </classes>
+  </test> <!-- Second Register -->
+  <test name="First Register(failed)">
+    <parameter name="firstname" value="mohamed"/>
+    <parameter name="password" value="mazagat_007"/>
+    <parameter name="email" value="mohamed_sabry007@yahoo.com"/>
+    <parameter name="lastname" value="mahran"/>
+    <classes>
+      <class name="com.Tests.RegisterTests">
+        <methods>
+          <include name="test"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.RegisterTests -->
+    </classes>
+  </test> <!-- First Register(failed) -->
+  <test name="Second Register(failed)">
+    <parameter name="firstname" value="Ahmed"/>
+    <parameter name="password" value="mazagat_008"/>
+    <parameter name="email" value="mohamed_sabry007@yahoo.com"/>
+    <parameter name="lastname" value="mahran"/>
+    <classes>
+      <class name="com.Tests.RegisterTests">
+        <methods>
+          <include name="test"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Tests.RegisterTests -->
+    </classes>
+  </test> <!-- Second Register(failed) -->
+</suite> <!-- Failed suite [Suite] -->

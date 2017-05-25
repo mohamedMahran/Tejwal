@@ -1,0 +1,155 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 28139529577,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Customer Navigate to Tejawal Home Page",
+            "match": {
+              "location": "BaseClass.customer_Navigate_to_Tejawal_Home_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6001597182,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.launchChrome()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "check that Client reserve a ticket for 2 adults in economy class",
+        "description": "",
+        "id": "createaccount-functinality;check-that-client-reserve-a-ticket-for-2-adults-in-economy-class",
+        "after": [
+          {
+            "result": {
+              "duration": 1887389606,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.chrometearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8502925535,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Client Enter Trip Information",
+            "match": {
+              "location": "CheckOutTickets.client_Enter_Trip_Information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 286195549,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Press Search Flights",
+            "match": {
+              "location": "CheckOutTickets.press_Search_Flights()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24322257672,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the search query data will aligned with any specific carrier",
+            "match": {
+              "location": "CheckOutTickets.the_search_query_data_will_aligned_with_any_specific_carrier()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 765439687,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Client Filter by Emirates Airways",
+            "match": {
+              "location": "CheckOutTickets.client_Filter_by_British_Airways()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5269033544,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Lisitng results are only the selected carrier",
+            "match": {
+              "location": "CheckOutTickets.lisitng_results_are_only_the_selected_carrier()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20231084489,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Client Enter Contact Details",
+            "match": {
+              "location": "CheckOutTickets.client_Enter_Contact_Details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1688502186,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Press Continue to Payment",
+            "match": {
+              "location": "CheckOutTickets.press_Continue_to_Payment()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@chrome"
+          }
+        ]
+      }
+    ],
+    "name": "CreateAccount functinality",
+    "description": "As a user  I want to check functionality of Tejawal Home Page",
+    "id": "createaccount-functinality",
+    "keyword": "Feature",
+    "uri": "TejawalReservation.feature"
+  }
+]
